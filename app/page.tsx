@@ -15,6 +15,8 @@ import galleryImgL3 from "@/public/images/gallery/l3.jpg";
 import galleryImgR1 from "@/public/images/gallery/r1.jpg";
 import galleryImgR2 from "@/public/images/gallery/r2.jpg";
 import galleryImgR3 from "@/public/images/gallery/r3.jpg";
+import ImageSlider from "./ImageSlider";
+import VideoSlider from "./VideoSlider";
 
 export default function Home() {
   return (
@@ -57,14 +59,7 @@ export default function Home() {
         className='border-t-2 border-slate-300 h-screen w-full  bg-gray-800 flex flex-col lg:flex-row'
       >
         <div className='h-auto w-screen overflow-hidden'>
-          <Image
-            src={contactPic}
-            alt=''
-            priority
-            className='object-cover h-full w-full object-top'
-            placeholder='blur'
-            quality={100}
-          />
+          <ImageSlider />
         </div>
         <div className='h-auto w-screen p-10 lg:self-center'>
           <h3 className='text-3xl text-yellow-500'>Fashion Revolution</h3>
@@ -155,8 +150,10 @@ export default function Home() {
       {/* VIDEO GALLERY */}
       <section
         id='VideoGallery'
-        className='border-4 border-purple-600 h-screen w-full  bg-gray-800'
-      ></section>
+        className='border-4 border-purple-600 h-screen w-full  bg-gray-800    flex justify-center items-center'
+      >
+        {/* <VideoSlider /> */}
+      </section>
 
       {/* FOLLOW ME */}
       <section id='FollowMe' className='h-screen w-full '>

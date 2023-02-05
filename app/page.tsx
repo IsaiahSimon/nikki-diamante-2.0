@@ -13,9 +13,9 @@ export default function Home() {
       <Hero />
       <Bio />
       <ImageGallery />
-      <VideoGallery />
+      {/* <VideoGallery /> */}
       <FollowMe />
-      <Brands />
+      {/* <Brands /> */}
       <Contact />
       <Footer />
     </main>

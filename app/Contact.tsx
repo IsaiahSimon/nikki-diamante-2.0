@@ -37,9 +37,9 @@ const Contact = () => {
 
         {/* Form */}
         <form
-          action='/api/form'
-          method='post'
-          id='contact-form'
+          name='contact'
+          method='POST'
+          data-netlify='true'
           className=' w-full h-full flex flex-col justify-evenly items-start'
         >
           {/* first name */}

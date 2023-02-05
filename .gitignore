@@ -2,6 +2,14 @@
 
 # TODO REMOVE AFTER FILES FETCH FROM CLOUDINARY
 /public/videos/slides
+app/Todos.tsx
+app/dashboard/
+data.ts
+pages/api/contents.ts
+pages/api/images.ts
+pages/api/todos.ts
+pages/api/videos.ts
+todos.ts
 
 # dependencies
 /node_modules

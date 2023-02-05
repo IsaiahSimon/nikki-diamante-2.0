@@ -40,8 +40,11 @@ const Contact = () => {
           name='contact'
           method='POST'
           data-netlify='true'
+          action='#'
+          data-netlify-honeypot='bot-field'
           className=' w-full h-full flex flex-col justify-evenly items-start'
         >
+          <input type='hidden' name='form-name' value='contact' />
           {/* first name */}
           <div className=' w-full flex flex-col'>
             <input

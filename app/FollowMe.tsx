@@ -5,7 +5,7 @@ import { SiTiktok } from "react-icons/si";
 
 const FollowMe = () => {
   return (
-    <section id='FollowMe' className='h-screen w-full '>
+    <section id='follow-me' className='h-screen w-full '>
       <div className='border-t-2 border-slate-300 h-screen w-full p-10 flex flex-col justify-between'>
         <div>
           <h3 className='text-3xl text-yellow-500'>Social Media</h3>
@@ -17,14 +17,14 @@ const FollowMe = () => {
           target='_blank'
           rel='noopener noreferrer'
         >
-          <GrInstagram className='text-yellow-500 text-7xl' />
+          <GrInstagram className='text-yellow-500 text-7xl hover:text-white' />
         </Link>
         <Link
           href='https://www.tiktok.com/@nikki_diamante?_t=8Z7IF87HEYF&_r=1'
           target='_blank'
           rel='noopener noreferrer'
         >
-          <SiTiktok className='text-yellow-500 text-7xl' />
+          <SiTiktok className='text-yellow-500 text-7xl hover:text-white' />
         </Link>
 
         <p className='text-2xl text-slate-300 pb-4 lg:w-1/3 '>
@@ -36,11 +36,11 @@ const FollowMe = () => {
             join me on my journey.
           </span>
           Follow me on{" "}
-          <Link href='#' className='text-yellow-500'>
+          <Link href='#' className='text-yellow-500 hover:text-white'>
             Instagram
           </Link>{" "}
           and{" "}
-          <Link href='#' className='text-yellow-500'>
+          <Link href='#' className='text-yellow-500 hover:text-white'>
             TikTok
           </Link>{" "}
           to see my latest photos and updates!

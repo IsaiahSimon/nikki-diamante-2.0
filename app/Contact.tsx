@@ -9,8 +9,8 @@ import contactPic from "@/public/images/contact.jpg";
 const Contact = () => {
   return (
     <section
-      id='Contact'
-      className='h-[90vh] w-full  bg-gray-800 flex flex-col lg:flex-row'
+      id='contact'
+      className='h-[90vh] w-full  bg-gray-800 flex flex-col lg:flex-row border-t-2 border-slate-300'
     >
       {/* Box 1: Contact Form */}
       <div className=' h-full lg:h-full w-full p-5 lg:w-1/2 flex flex-col justify-center items-start'>
@@ -23,14 +23,14 @@ const Contact = () => {
               target='_blank'
               rel='noopener noreferrer'
             >
-              <GrInstagram className='text-yellow-500 text-4xl' />
+              <GrInstagram className='text-yellow-500 text-4xl hover:text-white' />
             </Link>
             <Link
               href='https://www.tiktok.com/@nikki_diamante?_t=8Z7IF87HEYF&_r=1'
               target='_blank'
               rel='noopener noreferrer'
             >
-              <SiTiktok className='text-yellow-500 text-4xl' />
+              <SiTiktok className='text-yellow-500 text-4xl hover:text-white' />
             </Link>
           </div>
         </div>
@@ -115,14 +115,14 @@ const Contact = () => {
             <button
               type='submit'
               value='Send Message'
-              className='bg-yellow-500 text-gray-900 rounded-sm p-2'
+              className='bg-yellow-500 text-gray-900 rounded-sm p-2 hover:bg-white hover:border-white'
             >
               Send Message
             </button>
             <button
               type='reset'
               value='Clear form'
-              className='bg-yellow-500 text-gray-900 rounded-sm p-2'
+              className='bg-yellow-500 text-gray-900 rounded-sm p-2 hover:bg-white hover:border-white'
             >
               Clear Form
             </button>

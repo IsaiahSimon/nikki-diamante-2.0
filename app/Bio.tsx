@@ -26,7 +26,7 @@ const Bio = () => {
         </p>
         <Link
           href='/about'
-          className='text-yellow-500 border-2 border-yellow-500 p-1 rounded text-1xl uppercase'
+          className='text-yellow-500 border-2 border-yellow-500 p-1 rounded text-1xl uppercase hover:text-white hover:border-white'
         >
           Read More
         </Link>

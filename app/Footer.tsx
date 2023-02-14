@@ -11,7 +11,7 @@ const Footer = () => {
         {"Copyright © "}
         <Link
           href='/'
-          className='no-underline text-yellow-500 hover:text-yellow-600'
+          className='no-underline text-yellow-500 hover:text-white'
         >
           Nikki Diamanté
         </Link>{" "}
@@ -22,7 +22,7 @@ const Footer = () => {
         Website crafted with care by{" "}
         <Link
           href='https://isaiahsimon.dev/'
-          className='no-underline text-yellow-500 hover:text-yellow-600'
+          className='no-underline text-yellow-500 hover:text-white'
         >
           Isaiah Simon
         </Link>{" "}

@@ -11,7 +11,7 @@ import galleryImgR3 from "@/public/images/gallery/r3.jpg";
 const ImageGallery = () => {
   return (
     <section
-      id='ImageGallery'
+      id='image-gallery'
       className='h-auto lg:h-screen w-full     p-3 bg-gray-800 flex flex-col justify-center items-center lg:p-0'
     >
       {/* Container for Boxes */}

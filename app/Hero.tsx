@@ -1,7 +1,7 @@
+"use client";
+
 import React from "react";
 import Image from "next/image";
-import Link from "next/link";
-
 import heroPic from "@/public/images/hero.jpg";
 
 const Hero = () => {
@@ -19,18 +19,18 @@ const Hero = () => {
       </div>
       <div className='p-16'>
         <h1 className='text-6xl text-slate-300 mb-5'>Nikki Diamanté</h1>
-        <Link
+        <a
           href='#bio'
-          className='mr-3 text-yellow-500 border-2 border-yellow-500 p-1 rounded text-2xl uppercase'
+          className='mr-3 text-yellow-500 border-2 border-yellow-500 p-1 rounded text-2xl uppercase hover:text-white hover:border-white'
         >
           Discover
-        </Link>
-        <Link
-          href='#'
-          className='text-yellow-500 border-2 border-yellow-500 p-1 rounded text-2xl uppercase'
+        </a>
+        <a
+          href='#contact'
+          className='text-yellow-500 border-2 border-yellow-500 p-1 rounded text-2xl uppercase hover:text-white hover:border-white'
         >
           Bookings
-        </Link>
+        </a>
       </div>
     </header>
   );

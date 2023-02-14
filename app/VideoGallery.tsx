@@ -5,7 +5,7 @@ import VideoSlider from "./VideoSlider";
 const VideoGallery = () => {
   return (
     <section
-      id='VideoGallery'
+      id='video-gallery'
       className='h-screen w-full   relative flex justify-center items-center'
     >
       <VideoSlider />

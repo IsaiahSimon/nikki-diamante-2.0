@@ -38,6 +38,8 @@ const FollowMe = () => {
           Follow me on{" "}
           <Link
             href='https://www.instagram.com/nikki_diamante_/?hl=en'
+            target='_blank'
+            rel='noopener noreferrer'
             className='text-yellow-500 hover:text-white'
           >
             Instagram
@@ -45,6 +47,8 @@ const FollowMe = () => {
           and{" "}
           <Link
             href='https://www.tiktok.com/@nikki_diamante?_t=8Z7IF87HEYF&_r=1'
+            target='_blank'
+            rel='noopener noreferrer'
             className='text-yellow-500 hover:text-white'
           >
             TikTok

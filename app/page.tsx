@@ -7,7 +7,7 @@ import ImageGallery from "./ImageGallery";
 import VideoGallery from "./VideoGallery";
 import FollowMe from "./FollowMe";
 
-export default function Home() {
+export default function HomePage() {
   return (
     <main>
       <Hero />

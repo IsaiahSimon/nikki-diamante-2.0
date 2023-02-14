@@ -9,10 +9,10 @@ const Bio = () => {
       id='bio'
       className='border-t-2 border-slate-300 h-screen w-full  bg-gray-800 flex flex-col lg:flex-row'
     >
-      <div className='h-auto w-screen overflow-hidden'>
+      <div className='h-auto w-full overflow-hidden'>
         <ImageSlider />
       </div>
-      <div className='h-auto w-screen p-10 lg:self-center'>
+      <div className='h-auto w-full p-10 lg:self-center'>
         <h3 className='text-3xl text-yellow-500'>Fashion Revolution</h3>
         <h2 className='text-6xl text-slate-300 mb-5'>Nikki's Bio</h2>
         <p className='text-base text-slate-300 pb-4'>

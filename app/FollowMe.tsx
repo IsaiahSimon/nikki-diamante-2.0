@@ -36,11 +36,17 @@ const FollowMe = () => {
             join me on my journey.
           </span>
           Follow me on{" "}
-          <Link href='#' className='text-yellow-500 hover:text-white'>
+          <Link
+            href='https://www.instagram.com/nikki_diamante_/?hl=en'
+            className='text-yellow-500 hover:text-white'
+          >
             Instagram
           </Link>{" "}
           and{" "}
-          <Link href='#' className='text-yellow-500 hover:text-white'>
+          <Link
+            href='https://www.tiktok.com/@nikki_diamante?_t=8Z7IF87HEYF&_r=1'
+            className='text-yellow-500 hover:text-white'
+          >
             TikTok
           </Link>{" "}
           to see my latest photos and updates!

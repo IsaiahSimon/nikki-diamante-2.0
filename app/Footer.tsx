@@ -21,7 +21,7 @@ const Footer = () => {
       <p className='text-center text-slate-300 lg:pl-2'>
         Website crafted with care by{" "}
         <Link
-          href='https://isaiahsimon.dev/'
+          href='https://isimon.dev/'
           className='no-underline text-yellow-500 hover:text-white'
         >
           Isaiah Simon

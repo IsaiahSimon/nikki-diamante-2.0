@@ -5,16 +5,20 @@ import { useState } from "react";
 const VideoSlider = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
 
-  // TODO: make titles dynamic by fetching data
-  // const slides = [
-  //   { source: vidSlide1, title: "Valentines" },
-  //   { source: vidSlide2, title: "8 at the Table" },
-  //   { source: vidSlide3, title: "The Icarus Instinct" },
-  // ];
-
-  // TODO: remove hard code when importing videos from api as array of objects
-  const slides = [0, 1, 2];
-  const titles = ["Valentines", "8 at the Table", "The Icarus Instinct"];
+  const slides = [
+    {
+      source: "https://www.youtube.com/embed/MPPEvFJxyFA",
+      title: "The Icarus Instinct",
+    },
+    {
+      source: "https://www.youtube.com/embed/In86rfpBuqE",
+      title: "8 at the Table",
+    },
+    {
+      source: "https://www.youtube.com/embed/sOoz8ProUIM",
+      title: "Valentines",
+    },
+  ];
 
   const goToPrevious = () => {
     const isFirstSlide = currentIndex === 0;
@@ -31,17 +35,16 @@ const VideoSlider = () => {
 
   return (
     <>
-      <video
-        playsInline
-        controls
-        autoPlay
-        muted
-        loop
-        src={`/videos/slides/vidSlide${currentIndex + 1}.mp4`}
+      {/* HTML5 <video> element cannot use YouTube page URLs */}
+      <iframe
+        width='560'
+        height='315'
+        src={slides[currentIndex].source}
+        title='YouTube video player'
+        allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share'
+        allowFullScreen
         className='object-cover h-full w-full object-top'
-      >
-        Your browser does not support the video tag.
-      </video>
+      ></iframe>
 
       {/* ARROWS */}
       <div
@@ -56,11 +59,6 @@ const VideoSlider = () => {
       >
         {" "}
         〉{" "}
-      </div>
-
-      {/* Top Gradient + Content overlay */}
-      <div className='absolute top-0 left-0 h-1/6 w-full flex justify-start items-center pl-3 bg-gradient-to-b from-gray-800 to-transparent'>
-        <h1 className='text-6xl text-white '>{titles[currentIndex]}</h1>
       </div>
     </>
   );
